@@ -1,0 +1,17 @@
+sudo vi /etc/systemd/system/dbdump_backup.service
+
+[Unit]
+Description=This service will store dump from *** server and apply it locally.
+Wants=network-online.target
+After=network-online.target
+[Service]
+User=alim
+WorkingDirectory=/home/alim/
+ExecStart=/bin/bash /home/alim/dbdump.sh
+[Install]
+WantedBy=default.target
+
+sudo systemctl daemon-reload
+sudo systemctl enable dbdump_backup.service
+sudo systemctl start dbdump_backup.service
+systemctl status dbdump_backup.service
