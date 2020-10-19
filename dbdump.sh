@@ -29,5 +29,6 @@ sed -i 's/CREATE DATABASE ast/---/g' ${FILE}
 # #applying on local db
 echo "applying on local db....."
 sudo su - postgres -c "cat ${FILE} | psql ast"
+sudo su - postgres -c "cat aa | psql global_ast"
 
 echo "done."

@@ -7,22 +7,14 @@ from jasperEndFooter import *
 import sys 
 
 tableOfItems=[
-    "stockLotOid",
-    "tag",
-    "isIssuable",
-    "currentValue",
-    "bookValue",
-    "lifeTime",
-    "itemOid"
+    "date",
+    "type",
+    "userName"
 ]
 tableOfItemsBn = [
-    "lalastockLotOid",
-    "lalatag",
-    "lalaisIssuable",
-    "lalacurrentValue",
-    "lalabookValue",
-    "lalalifeTime",
-    "lalaitemOid"
+    "তারিখ",
+    "ধরণ",
+    "ব্যবহারকারী "
 ]
 
 reportItems = [
